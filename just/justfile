@@ -1,0 +1,8 @@
+mod lazygit
+mod nvim
+
+import 'lib.just'
+
+ensure_all: ensure_just_config_dir
+  @just lazygit::install
+
